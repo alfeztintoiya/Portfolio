@@ -24,12 +24,6 @@ const Contact = () => {
                             <h3>Email</h3>
                             <p>alfez.tintoiya25@gmail.com</p>
                         </a>
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}><FaPhone /></div>
-                            <h3>Phone</h3>
-                            <p>(+91) 7861844041</p>
-                        </div>
                     </div>
 
                     <div className={styles.socials}>
