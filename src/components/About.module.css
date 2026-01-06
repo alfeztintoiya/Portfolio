@@ -1,0 +1,39 @@
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--accent-primary);
+    display: inline-block;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.textContainer p {
+    max-width: 800px;
+}
+
+strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
