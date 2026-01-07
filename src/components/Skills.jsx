@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./Skills.module.css";
 import { FaJava, FaPython, FaJs, FaHtml5, FaCss3, FaNodeJs, FaReact, FaDocker, FaGitAlt, FaDatabase } from "react-icons/fa";
 import { SiCplusplus, SiTypescript, SiPostgresql, SiFirebase, SiSupabase, SiPostman } from "react-icons/si";
+import fastmcpImg from "../assets/fastmcp.png";
 
 const Skills = () => {
     const skillCategories = [
@@ -22,7 +23,8 @@ const Skills = () => {
             skills: [
                 { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
                 { name: "React", icon: <FaReact color="#61DAFB" /> },
-                { name: "Express.js", icon: <FaNodeJs color="#000000" /> }, // reused Node icon for Express usually fine or generic
+                { name: "Express.js", icon: <FaNodeJs color="#000000" /> },
+                { name: "FastMCP", icon: <img src={fastmcpImg} alt="FastMCP" className={styles.imageIcon} /> }
             ]
         },
         {

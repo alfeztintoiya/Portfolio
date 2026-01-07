@@ -63,6 +63,15 @@
 
 .icon {
     font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageIcon {
+    height: 1em;
+    width: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 600px) {
