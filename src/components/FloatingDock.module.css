@@ -1,0 +1,117 @@
+.dockContainer {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.dock {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(20, 20, 20, 0.6);
+    /* Translucent dark background */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    /* Pill shape */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+:global([data-theme='light']) .dock {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dockItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    position: relative;
+    /* For tooltip positioning */
+}
+
+.dockItem:hover {
+    background-color: var(--bg-card-hover);
+    color: var(--text-primary);
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.dockItem:active {
+    transform: translateY(-2px) scale(0.95);
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: rgba(20, 20, 20, 0.8);
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.75rem;
+    backdrop-filter: blur(4px);
+    font-weight: 500;
+}
+
+:global([data-theme='light']) .tooltip {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dockItem:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.separator {
+    width: 1px;
+    height: 1.5rem;
+    background-color: var(--border-color);
+    margin: 0 0.25rem;
+}
+
+@media (max-width: 600px) {
+    .dockContainer {
+        bottom: 1.5rem;
+    }
+
+    .dock {
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .dockItem {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+}
