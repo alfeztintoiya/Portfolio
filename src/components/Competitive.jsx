@@ -48,8 +48,8 @@ const Competitive = () => {
                                 <SiLeetcode />
                             </div>
                             <span className={styles.statLabel}>LeetCode</span>
-                            <span className={styles.statValue}>1942</span>
-                            <span className={styles.statRank}>Knight (Top 3.4%)</span>
+                            <span className={styles.statValue}>1960</span>
+                            <span className={styles.statRank}>Knight (Top 3%)</span>
                             <a href="https://leetcode.com/alfez18/" target="_blank" rel="noopener noreferrer" className={styles.profileLink}>View Profile</a>
                         </motion.div>
 
@@ -61,8 +61,8 @@ const Competitive = () => {
                                 <CodeforcesLogo />
                             </div>
                             <span className={styles.statLabel}>Codeforces</span>
-                            <span className={styles.statValue}>1331</span>
-                            <span className={styles.statRank}>Pupil</span>
+                            <span className={styles.statValue}>1421</span>
+                            <span className={styles.statRank}>Specialist</span>
                             <a href="https://codeforces.com/profile/alfez2503" target="_blank" rel="noopener noreferrer" className={styles.profileLink}>View Profile</a>
                         </motion.div>
 
@@ -74,7 +74,7 @@ const Competitive = () => {
                                 <SiCodechef />
                             </div>
                             <span className={styles.statLabel}>CodeChef</span>
-                            <span className={styles.statValue}>1698</span>
+                            <span className={styles.statValue}>1703</span>
                             <span className={styles.statRank}>3-Star</span>
                             <a href="https://www.codechef.com/users/alfez18" target="_blank" rel="noopener noreferrer" className={styles.profileLink}>View Profile</a>
                         </motion.div>
