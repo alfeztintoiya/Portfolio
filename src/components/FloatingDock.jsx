@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { FaHome, FaFileAlt } from "react-icons/fa";
+import { FaHome, FaFileAlt, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode, SiCodeforces, SiCodechef } from "react-icons/si";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { Link } from "react-scroll";
@@ -43,6 +43,17 @@ const FloatingDock = () => {
                 >
                     <FaFileAlt />
                     <span className={styles.tooltip}>Resume</span>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                    href="https://linkedin.com/in/alfez-tintoiya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.dockItem}
+                >
+                    <FaLinkedin />
+                    <span className={styles.tooltip}>LinkedIn</span>
                 </a>
 
                 <div className={styles.separator}></div>
