@@ -13,14 +13,17 @@ const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
+                    <div className={styles.currentRoleBadge}>
+                        <span className={styles.pulseDot}></span>
+                        AI Engineer Intern @ <a href="https://solvay5.ai/" target="_blank" rel="noopener noreferrer" className={styles.companyLink}>Solvay5</a>
+                    </div>
                     <p className={styles.greeting}>Hi, I'm</p>
                     <h1 className={styles.name}>Alfez Tintoiya</h1>
                     <h2 className={styles.title}>
-                        Backend Developer & <br /> Competitive Programmer
+                        AI Software Engineer & <br /> Competitive Programmer
                     </h2>
                     <p className={styles.description}>
-                        I specialize in building scalable microservices and solving complex algorithmic problems.
-                        Ranked Top 3.4% worldwide on LeetCode.
+                        I specialize in building AI agentic systems and reliable backend architecture. I love turning complex algorithmic problems into practical code, and I'm currently ranked in the Top 3.4% worldwide on LeetCode.
                     </p>
                     <div className={styles.buttons}>
                         <Link to="projects" smooth duration={500} className={styles.btnPrimary}>

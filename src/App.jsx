@@ -5,6 +5,7 @@ import About from "./components/About";
 import Competitive from "./components/Competitive";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import FloatingDock from "./components/FloatingDock";
@@ -16,9 +17,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
       <Competitive />
       <Skills />
-      <Experience />
+      <Education />
       <Projects />
       <Contact />
       <FloatingDock />
